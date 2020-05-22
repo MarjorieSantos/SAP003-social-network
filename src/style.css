@@ -1,9 +1,87 @@
-.primary-button {
-  background-color: #ffe521;
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.5px;
+  background: #F2F2F2;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, p, span{
+  margin: 5px 0;
+  text-align: center;
+}
+
+.space-item {
+  margin-top: 20px;
+}
+
+.container{
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main{
+  min-height: 65vh;
+}
+
+.login-img{
+  width: 100%;
+  height: 180px;
+}
+
+/* .menu-nav ul{
+  list-style: none;
+}
+
+.menu-nav ul li{
+  display: inline;
+  text-decoration: none;
+} */
+
+.login-inputs {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-inputs input{
+  border: 1px solid #BFACAA;
+  border-radius: 100px;
+  padding: 15px;
+  width: 280px;
+  margin-bottom: 15px;
+}
+
+.login-inputs .btn{
+  border: 1px solid #BFACAA;
+  border-radius: 100px;
+  background: #BFACAA;
   padding: 10px;
-  font-size: 1.5rem;
-  border-radius: 5px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
+  width: 100px;
+  color: #F2F2F2;
+}
+
+.login-social{
+  text-align: center;
+}
+
+.login-social .icon{
+  width: 30px;
+  margin: 5px 5px 0px 5px;
+}
+
+.footer{
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }

@@ -6,28 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CodeBook</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+  <a href="https://www.flaticon.com/br/" title="Flaticon"></a>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <nav>
+    <section class="container">
+      <img src="./assets/login-butterfly.svg" alt="image page login butterfly" class="login-img">
+      <!-- <nav class="menu-nav">
       <ul>
-        <li><a href="/#home">Home</a></li>
-        <li><a href="/#about">Sobre</a></li>
-        <li><a href="/#about">Pole Dance</a></li>
-        <li><a href="/#about">Ballet</a></li>
-        <li><a href="/#contact">Contact</a></li>
+        <li><a href="/#home">home</a></li>
+        <li><a href="/#about">about</a></li>
+        <li><a href="/#contact">contact</a></li>
       </ul>
-    </nav>
+    </nav> -->
+    </section>
   </header>
-  <main id="root">
-
+  <main id="root" class="container main">
+    <div class="respects">
+      <h1>flyingbook</h1>
+      <p>Bem vinda, flying!</p>
+    </div>
+    <div class="login-inputs space-item">
+      <input type="text" placeholder="exemplo@email.com">
+      <input type="password" placeholder="senha" minlength="8" maxlength="8">
+      <button class="btn">Log in</button>
+    </div>
+    <div class="login-social space-item">
+      <p>Você pode entrar com:</p>
+      <a href="https://www.facebook.com/"><img src="./assets/icons/facebook.svg" alt="facebook icone" class="icon"></a>
+      <a href="https://www.gmail.com/"><img src="./assets/icons/google.svg" alt="google icone" class="icon"></a>
+    </div>
+    <div class="login-new space-item">
+      <p>Não tem uma conta?</p>
+      <p>Registrar-se</p>
+    </div>
   </main>
-  <footer>
-    @MarjSantos
+  <footer class="footer">
+    <p>@MarjSantos</p>
   </footer>
-  <script type="module" src="./main.js"></script>
+  <!-- <script type="module" src="./main.js"></script> -->
 </body>
 
 </html>
