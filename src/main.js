@@ -2,9 +2,9 @@ import homeLogin from "./pages/login.js"
 // import about from "./pages/about.js"
 // import contact from "./pages/contact.js"
 
-const aside = document.querySelector("#login-aside");
+const main = document.querySelector("#root");
 
 window.addEventListener('load', () => {
-    aside.appendChild(homeLogin())
+    main.appendChild(homeLogin())
 })
 

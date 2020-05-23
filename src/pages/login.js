@@ -1,10 +1,18 @@
 import button from "../components/button.js"
 import input from "../components/input.js"
+import logo from "../components/logo.js"
 
-const container = document.createElement("aside")
+const container = document.createElement("section")
+container.classList.add("main")
 
 const homeLogin = () => {
   const template = `
+  <header class="header" id="header">
+  <section class="container">
+    ${logo({ img: "./assets/login-butterfly.svg", class: "login-img", alt: "image page login butterfly" })}
+  </section>
+</header>
+<aside>
       <section class="container">
         <div class="respects">
           <h1>FlyingBook</h1>
@@ -28,11 +36,11 @@ const homeLogin = () => {
           </div>
         </form>
       </section>
+      </aside>
     `
+  container.innerHTML = template;
 
-    container.innerHTML = template;
-
-    return container
+  return container
 }
 
 export default homeLogin;
