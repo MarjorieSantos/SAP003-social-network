@@ -8,11 +8,11 @@ container.classList.add("main")
 const homeLogin = () => {
   const template = `
   <header class="header" id="header">
-  <section class="container">
-    ${logo({ img: "./assets/login-butterfly.svg", class: "login-img", alt: "image page login butterfly" })}
-  </section>
-</header>
-<aside>
+    <section class="container">
+      ${logo({ img: "./assets/login-butterfly.svg", class: "login-img", alt: "image page login butterfly" })}
+    </section>
+    </header>
+    <aside>
       <section class="container">
         <div class="respects">
           <h1>FlyingBook</h1>
@@ -22,7 +22,7 @@ const homeLogin = () => {
           <div class="login-inputs space-item">
             ${input({ type: "text", placeholder: "exemplo@email.com" })}
             ${input({ type: "password", placeholder: "senha" })}
-            ${button({ class: "btn", title: "Log In" })}
+            ${button({ class: "btn", title: "Log In"})}
           </div>
           <div class="login-social space-item">
             <p>Você pode entrar com:</p>

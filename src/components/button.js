@@ -1,6 +1,6 @@
 const button = (props) => {
     return (`
-    <button class="${props.class}" onclick="button.handleClick('${props.id}')" >${props.title}</button>
+    <button class="${props.class}" onclick="button.handleClick('${props.id}')" > <a href="home-network.html"> ${props.title}</a></button>
   `);
 }
 
