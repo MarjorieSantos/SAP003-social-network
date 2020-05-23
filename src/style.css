@@ -21,16 +21,16 @@ h1, h2, p, span{
 
 .container{
   width: 100%;
-  max-width: 900px;
+  max-width: 700px;
   margin: 0 auto;
+}
+
+.main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.main{
-  min-height: 65vh;
+  height: 100vh;
 }
 
 .login-img{
@@ -62,6 +62,10 @@ h1, h2, p, span{
   margin-bottom: 15px;
 }
 
+.login-inputs input::placeholder{
+  font-size: 15px;
+}
+
 .login-inputs .btn{
   border: 1px solid #BFACAA;
   border-radius: 100px;
@@ -80,8 +84,56 @@ h1, h2, p, span{
   margin: 5px 5px 0px 5px;
 }
 
-.footer{
-  bottom: 0;
-  position: absolute;
-  width: 100%;
+@media only screen and (min-width: 560px){
+
+}
+
+@media only screen and (min-width: 768px){
+  .main{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .header .login-img{
+    height: 300px;
+    width: 400px;
+    display: inline-block;
+  }
+
+  .login-inputs .btn{
+    width: 125px;
+    font-size: 16px;
+  }
+
+  .main h1{
+    font-size: 30px;
+  }
+
+  .main p{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .header .login-img{
+    height: 350px;
+    width: 450px;
+  }
+
+  .login-inputs input{
+    width: 350px;
+  }
+
+  .login-inputs .btn{
+    width: 150px;
+    font-size: 18px;
+  }
+
+  .main h1{
+    font-size: 35px;
+  }
+
+  .main p{
+    font-size: 20px;
+  }
 }
