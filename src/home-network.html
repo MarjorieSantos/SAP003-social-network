@@ -39,29 +39,28 @@
             </div>
         </section>
     </aside>
-    <main class="main">
-        <section class="container">
+    <main>
+        <section class="container main">
             <section class="share-info box">
-                <div>
-                    <label for="text-area"></label>
-                    <textarea name="text-area" id="text-area" cols="30" rows="5"
-                        placeholder="O que deseja compartilhar?"></textarea>
+                <label for="text-area"></label>
+                <textarea name="text-area" id="text-area" cols="30" rows="5"
+                    placeholder="O que deseja compartilhar?"></textarea>
+                <div class="icon-share">
+                    <button type="submit" class="btn"><i class="fas fa-image icon"></i></button>
+                    <button type="submit" class="btn">Compartilhar</button>
                 </div>
-                <button type="submit" class="btn"><i class="fas fa-image icon"></i></button>
-                <button type="submit" class="btn">Compartilhar</button>
             </section>
-            <section class="publications-section">
-                <div class="published-content box">
-                    <div>
-                        <span>Publicado por: </span>
-                    </div>
-                    <div>
-                        <p>olá, estou bem.</p>
-                    </div>
-                    <div class="icon-reaction">
-                        <button type="submit" class="btn"><i class="fas fa-heart icon"></i></button>
-                        <button type="submit" class="btn"><i class="fas fa-share-alt-square icon"></i></button>
-                    </div>
+            <section class="published-content box">
+                <div class="published-name">
+                    <span>Publicado por: Fulana Juarez</span>
+                    <button type="button" class="btn"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="published-comment">
+                    <p>olá, estou bem.</p>
+                </div>
+                <div class="icon-reaction">
+                    <button type="submit" class="btn"><i class="fas fa-heart icon"></i></button>
+                    <button type="submit" class="btn"><i class="fas fa-share-alt-square icon"></i></button>
                 </div>
             </section>
         </section>

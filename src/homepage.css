@@ -8,7 +8,7 @@
     letter-spacing: 0.5px;
     background: #F2F2F2;
     font-family: 'Raleway', sans-serif;
-  }
+}
 
 a, ul, li{
     text-decoration: none;
@@ -25,6 +25,7 @@ h1, h2{
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
+    padding: 0 15px;
   }
 
 .btn{
@@ -35,10 +36,11 @@ h1, h2{
 
 .btn .icon{
     font-size: 35px;
+    color: #40330C;
 }
 
 .header{
-    background: #734230;
+    background: rgb(143, 112, 19);
     color: #F2F2F2;
     display: flex;
     justify-content: center;
@@ -52,6 +54,10 @@ h1, h2{
     left: 0;
     top: 0;
     margin: 10px 20px;
+}
+
+.header .btn .icon{
+    color: white;
 }
 
 .aside {
@@ -71,21 +77,73 @@ h1, h2{
 
 .main {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
 .main .box{
     display: inline-block;
-    border: 1px solid #BFACAA;
+    border: none;
     border-radius: 10px;
-    padding: 15px;
+    margin: 10px auto;
+    box-shadow: 0 0 0.5em #BFACAA;
+    width: 100%;
+    background: white;
+}
+
+.main .share-info{
+    padding: 25px 15px;
 }
 
 .main .share-info textarea{
-    border: 1px solid #BFACAA;
+    border: none;
+    box-shadow: 0 0 0.5em #BFACAA;
     border-radius: 5px;
-    background: transparent;
-    padding: 5px;
+    background: white;
+    padding: 15px;
+    width: 100%;
 }
+
+.main .share-info .icon-share {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.main .share-info .icon-share .btn:nth-child(2){
+    border: 1px solid transparent;
+    border-radius: 50px;
+    padding: 10px;
+    background: rgba(245, 203, 76, 0.945);
+    color: black;
+}
+
+.main .published-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main .published-content .published-name{
+    background-color: rgba(245, 203, 76, 0.795);
+    padding: 15px 30px;
+    border-radius: 8px 8px 0 0;
+    border: none;
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .published-content .published-comment{
+    padding: 15px 0;
+}
+
+.main .published-content .icon-reaction{
+    background: rgba(245, 203, 76, 0.945);
+    width: 100%;
+    border-radius: 0 0 8px 8px ;
+    padding: 10px 25px;
+    width: 100%;
+}
+
