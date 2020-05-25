@@ -1,6 +1,9 @@
+// const button = document.createElement("button")
+// button.classList.add("btn")
+
 const button = (props) => {
     return (`
-    <button class="${props.class}" id="${props.id}" onclick="('${props.id}')" > ${props.title}</button>
+    <button class="${props.class}" id="${props.id}" onclick="(${props.id})">${props.title}</button>
   `);
 }
 
