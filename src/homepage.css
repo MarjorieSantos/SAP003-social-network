@@ -19,6 +19,7 @@ h1, h2{
     text-align: center;
     font-size: 30px;
     margin: 0 auto;
+    display: inline-block;
 }
 
 .container{
@@ -36,39 +37,49 @@ h1, h2{
 
 .btn .icon{
     font-size: 35px;
-    color: #40330C;
+    color: rgb(143, 112, 19);
+}
+
+.btn .icon:hover{
+    transition: all 200ms ease-in;
+    transform: scale(1.2);
+    z-index: 1;
 }
 
 .header{
     background: rgb(143, 112, 19);
     color: #F2F2F2;
+    width: 100%;
+    top: 0;
+    padding: 15px 0;
+}
+
+.header .text-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
-    width: 100%;
 }
 
 .header .btn {
-    position: fixed;
-    left: 0;
-    top: 0;
-    margin: 10px 20px;
+    margin: 0 15px;
 }
 
 .header .btn .icon{
     color: white;
 }
 
-.aside {
-    width: 100%;
-}
-
 .aside .profile-block .info-persona{
     text-align: start;
     display: flex;
     align-items: center;
-    margin: 25px ;
+    margin: 25px 20px;
+}
+
+.aside .profile-block .profile-user {
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
 }
 
 .aside .profile-block .info-persona .info-name{
@@ -78,6 +89,7 @@ h1, h2{
 .main {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .main .box{
@@ -141,9 +153,54 @@ h1, h2{
 
 .main .published-content .icon-reaction{
     background: rgba(245, 203, 76, 0.945);
-    width: 100%;
     border-radius: 0 0 8px 8px ;
     padding: 10px 25px;
     width: 100%;
+}
+
+@media only screen and (min-width: 768px){
+    .container{
+        padding: 0 30px;
+    }
+
+    .desktop-wrap{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .aside{
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 0.5em #BFACAA;
+        height: 230px;
+        margin-top: 10px;
+        width: 80%;
+    }
+
+    .aside .profile-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .aside .profile-block .info-persona{
+        margin: 0 20px;
+    }
+
+    .background-profile{
+        height: 115px;
+        width: 100%;
+        background: black;
+        border-radius: 8px 8px 0 0;
+        margin-bottom: 5px;
+    }
+
+    .main{
+        margin-left: 25px;
+    }
+
+    .main .box:nth-child(1){
+        margin: 10px auto 50px;
+    }
 }
 

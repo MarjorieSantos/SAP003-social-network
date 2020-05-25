@@ -2,10 +2,27 @@ import button from "../components/button.js"
 import input from "../components/input.js"
 import logo from "../components/logo.js"
 
+
+
+const signIn = () => {
+  window.addEventListener("click", () => {
+    const logar = document.querySelector("#logar")
+    window.location.href = '#page-home'
+  })
+}
+
+// window.button = {
+//   logar: (event, pageLogin) => {
+//     event.preventDefault();
+//     pageLogin(window.location = '#page-home');
+//   }
+// }
+
 const container = document.createElement("section")
 container.classList.add("main")
 
-const homeLogin = () => {
+const pageLogin = () => {
+  window.location.href = '#login';
   const template = `
   <header class="header" id="header">
     <section class="container">
@@ -20,9 +37,9 @@ const homeLogin = () => {
         </div>
         <form>
           <div class="login-inputs space-item">
-            ${input({ type: "text", placeholder: "exemplo@email.com" })}
-            ${input({ type: "password", placeholder: "senha" })}
-            ${button({ class: "btn", title: "Log In"})}
+            ${input({ type: "text", placeholder: "exemplo@email.com"  ,id: "email"})}
+            ${input({ type: "password", placeholder: "senha",  id: "senha"})}
+            ${button({type: "button", class: "btn", title: "Log In",  id: "logar", onclick: signIn()})}
           </div>
           <div class="login-social space-item">
             <p>Você pode entrar com:</p>
@@ -43,4 +60,4 @@ const homeLogin = () => {
   return container
 }
 
-export default homeLogin;
+export default pageLogin;
