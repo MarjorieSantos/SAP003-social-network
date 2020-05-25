@@ -1,45 +1,36 @@
 import pageLogin from "./pages/login.js"
 import pageHome from "./pages/page-home.js"
-// import about from "./pages/about.js"
-// import profile from "./pages/profile.js"
 
 const main = document.querySelector("#root");
 
-window.addEventListener('load', () => {
-    main.appendChild(pageLogin())
+const init = () => {
+    let component = "";
+    main.innerHTML = "";
+    switch (window.location.hash) {
+        case "#login":
+            component = pageLogin();
+            break;
+        case "#page-home":
+            component = pageHome();
+            break;
+        default:
+            component = pageLogin();
+    }
+    return component
+}
+
+
+window.addEventListener("load", () => {
+    main.appendChild(init());
+})
+
+window.addEventListener("hashchange", () => {
+    main.appendChild(init());
 })
 
 
-// const mainHome = document.querySelector("#root-home");
+const headerMenu = document.querySelector("#menu")
 
-// window.addEventListener('load', () => {
-//     mainHome.appendChild(pageHome())
-// })
+window.addEventListener("click", () => {
 
-// const headerMenu = document.querySelector("#menu")
-
-// window.addEventListener("click", () => {
-//     headerMenu.appendChild(menuHamburguer())
-// })
-
-const init = () => {
-    window.addEventListener("hashchange", () => {
-        main.innerHTML = ""
-        switch (window.location.hash) {
-            case "#login":
-                main.innerHTML = pageLogin();
-                break;
-            case "#page-home":
-                main.appendChild = pageHome();
-                break;
-            default:
-                main.innerHTML = pageLogin();
-        }
-    }
-    )
-}
-
-window.addEventListener("load", () => {
-    main.appendChild(pageLogin());
-    init();
 })

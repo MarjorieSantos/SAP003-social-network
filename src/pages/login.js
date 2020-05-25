@@ -3,27 +3,21 @@ import input from "../components/input.js"
 import logo from "../components/logo.js"
 
 
-
 const signIn = () => {
-  window.addEventListener("click", () => {
-    const logar = document.querySelector("#logar")
-    window.location.href = '#page-home'
-  })
+    window.addEventListener("click", (event) => {
+        event.preventDefault()
+        const logar = document.querySelector("#logar")
+        window.location.href = '#page-home'
+    })
 }
-
-// window.button = {
-//   logar: (event, pageLogin) => {
-//     event.preventDefault();
-//     pageLogin(window.location = '#page-home');
-//   }
-// }
 
 const container = document.createElement("section")
 container.classList.add("main")
+container.id = "login"
 
 const pageLogin = () => {
-  window.location.href = '#login';
-  const template = `
+    window.location.href = '/src/#login';
+    const template = `
   <header class="header" id="header">
     <section class="container">
       ${logo({ img: "./assets/login-butterfly.svg", class: "login-img", alt: "image page login butterfly" })}
@@ -55,9 +49,9 @@ const pageLogin = () => {
       </section>
       </aside>
     `
-  container.innerHTML = template;
+    container.innerHTML = template;
 
-  return container
+    return container
 }
 
 export default pageLogin;
