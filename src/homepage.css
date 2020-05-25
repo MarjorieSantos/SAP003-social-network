@@ -1,52 +1,43 @@
-*{
-    box-sizing: border-box;
-  }
-  
-  body{
-    margin: 0;
-    padding: 0;
-    letter-spacing: 0.5px;
-    background: #F2F2F2;
-    font-family: 'Raleway', sans-serif;
-}
-
-a, ul, li{
+#home a,
+ul,
+li {
     text-decoration: none;
     display: inline-block;
 }
 
-h1, h2{
+#home h1,
+h2 {
     text-align: center;
     font-size: 30px;
     margin: 0 auto;
     display: inline-block;
 }
 
-.container{
+#home .container {
     width: 100%;
-    max-width: 900px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 15px;
-  }
+}
 
-.btn{
+#home .btn {
     background: transparent;
     border: transparent;
     cursor: pointer;
 }
 
-.btn .icon{
+#home .btn .icon {
     font-size: 35px;
     color: rgb(143, 112, 19);
 }
 
-.btn .icon:hover{
+#home .btn .icon:hover {
     transition: all 200ms ease-in;
     transform: scale(1.2);
     z-index: 1;
 }
 
-.header{
+#home .header {
     background: rgb(143, 112, 19);
     color: #F2F2F2;
     width: 100%;
@@ -54,45 +45,45 @@ h1, h2{
     padding: 15px 0;
 }
 
-.header .text-header {
+#home .header .text-header {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header .btn {
+#home .header .btn {
     margin: 0 15px;
 }
 
-.header .btn .icon{
+#home .header .btn .icon {
     color: white;
 }
 
-.aside .profile-block .info-persona{
+#home .aside .profile-block .info-persona {
     text-align: start;
     display: flex;
     align-items: center;
     margin: 25px 20px;
 }
 
-.aside .profile-block .profile-user {
+#home .aside .profile-block .profile-user {
     border: 1px solid black;
     border-radius: 100%;
     width: 100px;
     height: 100px;
 }
 
-.aside .profile-block .info-persona .info-name{
+#home .aside .profile-block .info-persona .info-name {
     margin-left: 15px;
 }
 
-.main {
+#home.main {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.main .box{
+#home.main .box {
     display: inline-block;
     border: none;
     border-radius: 10px;
@@ -102,11 +93,11 @@ h1, h2{
     background: white;
 }
 
-.main .share-info{
+#home.main .share-info {
     padding: 25px 15px;
 }
 
-.main .share-info textarea{
+#home.main .share-info textarea {
     border: none;
     box-shadow: 0 0 0.5em #BFACAA;
     border-radius: 5px;
@@ -115,14 +106,14 @@ h1, h2{
     width: 100%;
 }
 
-.main .share-info .icon-share {
+#home.main .share-info .icon-share {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
 }
 
-.main .share-info .icon-share .btn:nth-child(2){
+#home.main .share-info .icon-share .btn:nth-child(2) {
     border: 1px solid transparent;
     border-radius: 50px;
     padding: 10px;
@@ -130,13 +121,13 @@ h1, h2{
     color: black;
 }
 
-.main .published-content {
+#home.main .published-content {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.main .published-content .published-name{
+#home.main .published-content .published-name {
     background-color: rgba(245, 203, 76, 0.795);
     padding: 15px 30px;
     border-radius: 8px 8px 0 0;
@@ -147,60 +138,49 @@ h1, h2{
     justify-content: space-between;
 }
 
-.main .published-content .published-comment{
+#home.main .published-content .published-comment {
     padding: 15px 0;
 }
 
-.main .published-content .icon-reaction{
+#home.main .published-content .icon-reaction {
     background: rgba(245, 203, 76, 0.945);
-    border-radius: 0 0 8px 8px ;
+    border-radius: 0 0 8px 8px;
     padding: 10px 25px;
     width: 100%;
 }
 
-@media only screen and (min-width: 768px){
-    .container{
-        padding: 0 30px;
-    }
-
-    .desktop-wrap{
+@media only screen and (min-width: 768px) {
+    #home .desktop-wrap {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
-
-    .aside{
+    #home .aside {
         border: none;
         border-radius: 10px;
         box-shadow: 0 0 0.5em #BFACAA;
         height: 230px;
         margin-top: 10px;
-        width: 80%;
+        width: 40%;
     }
-
-    .aside .profile-block{
+    #home .aside .profile-block {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
-
-    .aside .profile-block .info-persona{
+    #home .aside .profile-block .info-persona {
         margin: 0 20px;
     }
-
-    .background-profile{
+    #home .background-profile {
         height: 115px;
         width: 100%;
         background: black;
         border-radius: 8px 8px 0 0;
         margin-bottom: 5px;
     }
-
-    .main{
-        margin-left: 25px;
+    #home.main .aside-published {
+        width: 60%;
+        margin-left: 30px;
     }
-
-    .main .box:nth-child(1){
+    #home.main .box:nth-child(1) {
         margin: 10px auto 50px;
     }
 }
-
