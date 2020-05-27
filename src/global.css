@@ -17,3 +17,20 @@ body {
 .d-block {
     display: block
 }
+
+.v-hidden {
+    visibility: hidden;
+}
+
+.v-visible {
+    visibility: visible;
+}
+
+
+/* .opacity-zero {
+    opacity: 0;
+}
+
+.opacity-one {
+    opacity: 1;
+} */

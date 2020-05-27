@@ -4,9 +4,14 @@ import input from "../components/input.js"
 
 const openMenu = () => {
     window.addEventListener("click", (event) => {
-        const showItensMenu = document.querySelector("#showItensMenu")
+        // const showItensMenu = document.querySelector("#showItensMenu")
+        const openMenuModal = document.querySelector(".open-menu-modal")
+        const overlay = document.querySelector(".overlay")
         event.preventDefault()
-        showItensMenu.classList.toggle("d-block")
+            // showItensMenu.classList.toggle("d-block")
+        openMenuModal.classList.toggle("v-visible")
+        openMenuModal.classList.toggle("opacity-zero")
+        overlay.classList.toggle("d-block")
     })
 }
 
@@ -17,19 +22,22 @@ container.id = "home"
 const pageHome = () => {
     window.location.href = '/src/#page-home';
     const template = `
+    <div class="overlay d-none"></div>
     <header class="header">
     <div class="text-header">
     ${button({type: 'submit', id: "btnMenu" , title: "<i class='fas fa-bars icon'></i>", class: 'btn', onclick: openMenu()})}
-    <nav class="nav-menu d-none" id="showItensMenu">
+    <div class="open-menu-modal v-hidden opacity-one">
+    <nav class="" id="showItensMenu">
     <ul>
         <li>Home</li>
         <li>Perfil</li>
         <li>Sobre</li>
     </ul>
     </nav>
-        <h1>FlyingBook</h1>
     </div>
-    <!-- <a href="/#end-section">Encerrar sessão.</a> -->
+    </div>
+    <h1>FlyingBook</h1>
+     <a href="/src/#login" style = "display: none">Encerrar sessão.</a>
 </header>
 <section class="desktop-wrap container">
     <aside class="aside">
