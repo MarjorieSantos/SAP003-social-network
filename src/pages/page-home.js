@@ -31,7 +31,7 @@ const pageHome = () => {
     <ul>
         <li>Home</li>
         <li>Perfil</li>
-        <li>Sobre</li>
+        <li>Contato</li>
     </ul>
     </nav>
     </div>
