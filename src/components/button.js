@@ -1,17 +1,11 @@
-// const button = document.createElement("button")
-// button.classList.add("btn")
-
 const button = (props) => {
-    return (`
-    <button class="${props.class}" id="${props.id}" onclick="(${props.id})">${props.title}</button>
-  `);
+    return `
+    <button type="${props.type}" class="${props.class}" id="${props.id}" value="${props.value}", onclick="button.handleClick('${props.onclick}')"> ${props.title}</button>
+    `
 }
 
-window.button = {
-    handleClick: (event, callback) => {
-        event.preventDefault();
-        callback(event);
-    },
-};
 
 export default button;
+
+// onclick="('${props.onclick}')"
+// onclick: "handleClick",

@@ -29,8 +29,8 @@ window.addEventListener("hashchange", () => {
 })
 
 
-const headerMenu = document.querySelector("#menu")
+// const headerMenu = document.querySelector("#menu")
 
-window.addEventListener("click", () => {
+// window.addEventListener("click", () => {
 
-})
+// })

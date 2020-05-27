@@ -6,7 +6,6 @@ import logo from "../components/logo.js"
 const signIn = () => {
     window.addEventListener("click", (event) => {
         event.preventDefault()
-        const logar = document.querySelector("#logar")
         window.location.href = '#page-home'
     })
 }
