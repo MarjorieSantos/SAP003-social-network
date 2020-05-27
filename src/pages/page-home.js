@@ -1,6 +1,14 @@
 import button from "../components/button.js"
 import input from "../components/input.js"
-import menuHamburguer from "./menu-hambuguer.js"
+
+
+const openMenu = () => {
+    window.addEventListener("click", (event) => {
+        const showItensMenu = document.querySelector("#showItensMenu")
+        event.preventDefault()
+        showItensMenu.classList.toggle("d-block")
+    })
+}
 
 const container = document.createElement("section")
 container.classList.add("main")
@@ -11,7 +19,14 @@ const pageHome = () => {
     const template = `
     <header class="header">
     <div class="text-header">
-    ${menuHamburguer()}
+    ${button({type: 'submit', id: "btnMenu" , title: "<i class='fas fa-bars icon'></i>", class: 'btn', onclick: openMenu()})}
+    <nav class="nav-menu d-none" id="showItensMenu">
+    <ul>
+        <li>Home</li>
+        <li>Perfil</li>
+        <li>Sobre</li>
+    </ul>
+    </nav>
         <h1>FlyingBook</h1>
     </div>
     <!-- <a href="/#end-section">Encerrar sessão.</a> -->
